@@ -27,6 +27,17 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#
+
+from django.core.urlresolvers import reverse_lazy
+#告诉Django用户登录成功后如果contrib.auth.views.login视图（view）没
+#有获取到next参数将会默认重定向到哪个URL。
+LOGIN_REDIRECT_URL = reverse_lazy('dashboard')
+#重定向用户登录的URL（例如：使用login_required装饰器（decorator））
+LOGIN_URL = reverse_lazy('login')
+#重定向用户登出的URL。
+LOGOUT_URL = reverse_lazy('logout')
+
 
 # Application definition
 
