@@ -39,6 +39,15 @@ LOGIN_URL = reverse_lazy('login')
 LOGOUT_URL = reverse_lazy('logout')
 
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_HOST_USER = 'hellangelzy@hotmail.com'
+EMAIL_HOST_PASSWORD = 'ohmylove1986'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+
+
 # Application definition
 
 INSTALLED_APPS = [
