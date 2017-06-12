@@ -20,6 +20,9 @@ urlpatterns = [
     # post views
     #url(r'^login/$', views.user_login, name='login'),
 
+    # user register
+    url(r'^register/$', views.register, name='register'),
+
     # login logout
 
     url(r'^login/$', login, name='login'),
