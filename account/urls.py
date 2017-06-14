@@ -50,5 +50,8 @@ urlpatterns = [
         password_reset_complete,
         name='password_reset_complete'),
 
+    # dashbord
     url(r'^$', views.dashboard, name='dashboard'),
+    # edit user profile
+    url(r'^edit/$', views.edit, name='edit'),
     ]
