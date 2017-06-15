@@ -7,3 +7,6 @@ class ImageAdmin(admin.ModelAdmin):
     list_filter = ['created']
 
 admin.site.register(Image, ImageAdmin)
+
+
+
