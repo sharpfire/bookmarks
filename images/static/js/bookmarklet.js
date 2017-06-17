@@ -2,8 +2,8 @@
   var jquery_version = '2.1.4';
   var site_url = 'http://127.0.0.1:8000/';
   var static_url = site_url + 'static/';
-  var min_width = 0;
-  var min_height = 0;
+  var min_width = 100;
+  var min_height = 100;
 
   function bookmarklet(msg) {
     // load CSS
