@@ -52,6 +52,7 @@ EMAIL_USE_TLS = True
 # Application definition
 
 INSTALLED_APPS = [
+    'sorl.thumbnail',
     'images',
     'account',
     'django.contrib.admin',
