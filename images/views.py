@@ -58,7 +58,7 @@ def image_like(request):
 
 def image_list(request):
     images = Image.objects.all()
-    paginator = Paginator(images,8)
+    paginator = Paginator(images,20)
     page = request.GET.get('page')
     try:
         images = paginator.page(page)
