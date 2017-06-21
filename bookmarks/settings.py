@@ -117,6 +117,12 @@ DATABASES = {
     }
 }
 
+#另外一种方式为一个模型（model）指定一个URL是为你的项目添加ABSOLUTE_URL_OVERRIDES设置。
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u: reverse_lazy('user_detail',
+                                        args=[u.username])
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators

@@ -7,6 +7,8 @@ from images.models import Image
 from django.http import JsonResponse,HttpResponse
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from common.decorators import ajax_required
+
+
 # Create your views here.
 
 @login_required
