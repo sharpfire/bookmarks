@@ -20,6 +20,10 @@ urlpatterns = [
     # post views
     #url(r'^login/$', views.user_login, name='login'),
 
+    #user follow
+    url(r'^users/follow/$', views.user_follow, name='user_follow'),
+
+
     # user register
     url(r'^register/$', views.register, name='register'),
 

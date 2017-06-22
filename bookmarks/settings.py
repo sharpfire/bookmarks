@@ -25,7 +25,7 @@ SECRET_KEY = 'ztz#8vk&3ne1g2a=$aq9j2p%&do86!f)x*fb-paobavhm$k=#o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sharp.tunnel.qydev.com','127.0.0.1']
 
 #
 

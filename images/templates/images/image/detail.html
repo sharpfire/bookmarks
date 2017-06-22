@@ -5,7 +5,7 @@
 {% block content %}
     <h1>{{ image.title }}</h1>
     {% load thumbnail %}
-    {% thumbnail image.image "200" as im %}
+    {% thumbnail image.image "300" as im %}
         <a href="{{ image.image.url }}">
             <img src="{{ im.url }}" class="image-detail">
         </a>
