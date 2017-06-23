@@ -41,15 +41,24 @@ def user_login(request):
 
 @login_required
 def dashboard(request):
-    # display all actions by default
-    actions = Action.objects.exclude(user = request.user)
-    following_ids = request.user.following.values_list('id',flat = True)
+    # Display all actions by default
+    actions = Action.objects.all().exclude(user=request.user)
+    following_ids = request.user.following.values_list('id', flat=True)
     if following_ids:
         # If user is following others, retrieve only their actions
-        actions = actions.filter(user_id__in = following_ids)
+
+
+        # select_related()将会帮助你提高取回一对多关系的关联对象的执行效率
+        # select_related()无法给多对多或者多对一关系（ManyToMany或者倒转ForeignKey字段）工作
+        # Django提供了一个不同的查询集（QuerySets）方法叫做prefetch_realted，该方法在select_related()
+        # 方法支持的关系上增加了多对多和多对一的关系。prefetch_related()方法为每一种关系执行单独的查找然后对
+        # 各个结果进行连接通过使用Python。这个方法还支持GeneriRelation和GenericForeignKey的预先读取。
+        actions = actions.filter(user_id__in=following_ids).select_related('user', 'user__profile').prefetch_related('target')
     actions = actions[:10]
 
-    return render(request,"account/dashboard.html",{"section": "dashboard","actions":actions})
+    return render(request, 'account/dashboard.html', {'section': 'dashboard','actions': actions})
+
+
 
 def register(request):
     if request.method == "POST":
