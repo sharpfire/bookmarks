@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55e0aaa3-260b-4d39-a71f-00391fbcb0ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/cache/1c/f1/1cf122af630fb9dc09a148bfc0529c27.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/cache/51/0c/510c2404d4e77b18a38368ee3aee1d0b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/cache/58/dd/58dd0c13b6f02f0f0a86cd93d2b61d38.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/cache/72/6a/726a2447b0e508599abff15995f3d2e6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/cache/7d/e9/7de9c616fdaba441ffc93301b0a9c57a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/cache/ab/cc/abcc7626317da4a40a3249c0ed36b1f6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/actions/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/actions/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/actions/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/actions/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/actions/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/actions/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/actions/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/actions/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/actions/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account/views.py" afterPath="$PROJECT_DIR$/account/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bookmarks/settings.py" afterPath="$PROJECT_DIR$/bookmarks/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/views.py" afterPath="$PROJECT_DIR$/images/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,8 +33,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/account/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+            <state relative-caret-position="560">
+              <caret line="55" column="54" lean-forward="true" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -834,7 +816,14 @@
       <option name="project" value="LOCAL" />
       <updated>1498147531050</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="(chapter6) activity stream">
+      <created>1498233128223</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1498233128223</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -849,7 +838,7 @@
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1113" height="1056" extended-state="4" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18394025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="386" y="223" width="467" height="906" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18394025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="386" y="223" width="467" height="906" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5026738" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -929,7 +918,8 @@
     <MESSAGE value="(chapter6) build MtoM with intermediate model" />
     <MESSAGE value="(chapter6) build list &amp; views for user profile" />
     <MESSAGE value="(chapter6) build ajax views to follow users" />
-    <option name="LAST_COMMIT_MESSAGE" value="(chapter6) build ajax views to follow users" />
+    <MESSAGE value="(chapter6) activity stream" />
+    <option name="LAST_COMMIT_MESSAGE" value="(chapter6) activity stream" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1293,8 +1283,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/account/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+        <state relative-caret-position="560">
+          <caret line="55" column="54" lean-forward="true" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
